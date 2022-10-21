@@ -10,7 +10,7 @@
 
 ## Script to run the application
 
-### **Docker needs to be installed**
+#### Docker needs to be installed
 
 1) docker pull ghassenda/evive-app
 
