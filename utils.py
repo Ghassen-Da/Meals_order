@@ -47,11 +47,11 @@ def water_availability_dinner(orders, drink_dinners):
 def total_availability(orders, main, side, drink):
     main_available= basic_availablity(orders, main)
     if main_available==False:
-        print("Unable to process: Main is missing",end="")
+        print("Unable to process: Main is missing")
         return [False, None, None]
     side_available= basic_availablity(orders, side)
     if side_available==False:
-        print("Unable to process: Side is missing",end="")
+        print("Unable to process: Side is missing")
         return [True, False, None]
     drink_available= basic_availablity(orders, drink)
     return [main_available, side_available, drink_available]
@@ -104,7 +104,7 @@ def take_orders(order):
                     return
                 dessert_availibility=basic_availablity(orders,dessert_dinners)
                 if dessert_availibility==False:
-                    print("Unable to process: Dessert is missing",end="")
+                    print("Unable to process: Dessert is missing")
                     return
                 # Main
                 view(orders, main_dinners)
@@ -119,4 +119,4 @@ def take_orders(order):
                 # Dessert
                 view(orders, dessert_dinners)
     except IndexError:
-        print("Unable to process: Main is missing, side is missing",end="")
+        print("Unable to process: Main is missing, side is missing")

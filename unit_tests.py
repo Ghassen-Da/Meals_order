@@ -35,7 +35,7 @@ class TestOrders(unittest.TestCase):
         sys.stdout = captured_output              
         take_orders(order)
         sys.stdout = sys.__stdout__            
-        self.assertEqual(captured_output.getvalue(), "Unable to process: Side is missing")
+        self.assertEqual(captured_output.getvalue(), "Unable to process: Side is missing\n")
 
     def test6(self):
         order="Lunch 1,2,3"
@@ -67,7 +67,7 @@ class TestOrders(unittest.TestCase):
         sys.stdout = captured_output              
         take_orders(order)
         sys.stdout = sys.__stdout__            
-        self.assertEqual(captured_output.getvalue(), "Unable to process: Main is missing, side is missing")
+        self.assertEqual(captured_output.getvalue(), "Unable to process: Main is missing, side is missing\n")
     
     def test10(self):
         order="Dinner 1,2,3,4"
@@ -83,7 +83,7 @@ class TestOrders(unittest.TestCase):
         sys.stdout = captured_output              
         take_orders(order)
         sys.stdout = sys.__stdout__            
-        self.assertEqual(captured_output.getvalue(), "Unable to process: Dessert is missing")
+        self.assertEqual(captured_output.getvalue(), "Unable to process: Dessert is missing\n")
     
 
         
