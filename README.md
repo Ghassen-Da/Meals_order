@@ -16,6 +16,6 @@ Implemengtation of the different test cases in the assignment.
 
 #### Docker needs to be installed
 
-1) docker pull ghassenda/evive-app
+1) (sudo) docker pull ghassenda/evive-app
 
-2) docker run -it ghassenda/evive-app
+2) (sudo) docker run -it ghassenda/evive-app
